@@ -8,25 +8,28 @@ export default function Home() {
   const navigation = useNavigation();
   return (
     <View style={styles.container}>
-      <Image source={require("../../assets/banner.png")} style={styles.image} />
+      <Image
+        source={require("../../assets/Images/banner.png")}
+        style={styles.image}
+      />
+
       <View style={styles.header}>
         <View style={styles.textContainer}>
-          <Text style={styles.text}>Universidade de Brasília</Text>
+          <Text style={styles.title}>Universidade de Brasília</Text>
         </View>
       </View>
-
       <ScrollView>
         <Text style={styles.text}>CAMPUS</Text>
         <View
           style={{ flexDirection: "column", justifyContent: "space-around" }}
         >
           <Tab
-            onClick={() => navigation.navigate("Campus")}
+            onClick={() => navigation.navigate("CAMPUS")}
             value="Darcy Ribeiro"
           />
-          <Tab onClick={() => navigation.navigate("Campus")} value="FCE" />
-          <Tab onClick={() => navigation.navigate("Campus")} value="FGA" />
-          <Tab onClick={() => navigation.navigate("Campus")} value="FUP" />
+          <Tab onClick={() => navigation.navigate("CAMPUS")} value="FCE" />
+          <Tab onClick={() => navigation.navigate("CAMPUS")} value="FGA" />
+          <Tab onClick={() => navigation.navigate("CAMPUS")} value="FUP" />
         </View>
       </ScrollView>
     </View>
@@ -44,21 +47,30 @@ const styles = StyleSheet.create({
     backgroundColor: "#003A7A",
     alignItems: "center",
   },
-  image: { width: "100%", resizeMode: "contain" },
+  image: {
+    position: "relative",
+    top: 0,
+    width: "100%",
+    resizeMode: "contain",
+  },
   textContainer: {
     flexDirection: "row",
     marginVertical: "5%",
     marginHorizontal: "5%",
-    alignContent: "center",
+    alignItems: "center", //centered horizontally
+    justifyContent: "center", ///centered vertically
+    textAlignVertical: "center",
   },
   text: {
-    fontFamily: "Anton_400Regular",
+    fontFamily: "UnB_Pro_Bold",
     fontSize: 26,
     marginHorizontal: "1%",
+    color: "black",
     alignSelf: "center",
   },
-  line: {
-    borderBottomColor: "#D8D8D8",
-    borderBottomWidth: 2,
+  title: {
+    fontFamily: "UnB_Pro_Bold",
+    color: "white",
+    fontSize: 30,
   },
 });

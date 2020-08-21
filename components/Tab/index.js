@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   textContainer: {
-    backgroundColor: "#0068B4",
     width: "90%",
     paddingHorizontal: 10,
     alignItems: "center",
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   text: {
-    fontFamily: "Anton_400Regular",
+    fontFamily: "UnB_Pro_Bold",
     fontSize: 25,
   },
 });

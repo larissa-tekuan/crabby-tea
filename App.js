@@ -3,14 +3,19 @@ import "react-native-gesture-handler";
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { AppLoading } from "expo";
-import { useFonts, Anton_400Regular } from "@expo-google-fonts/anton";
+import { useFonts } from "expo-font";
+import { activateKeepAwake } from "expo-keep-awake";
 
 import Routes from "./router";
 
 export default function App() {
+  activateKeepAwake();
+
   //Abre o app só depois de carregar a font
   let [fontsLoaded] = useFonts({
-    Anton_400Regular,
+    UnB_Pro_Black: require("./assets/Fonts/UnB_Pro_Black.otf"),
+    UnB_Pro_Bold: require("./assets/Fonts/UnB_Pro_Bold.otf"),
+    UnB_Pro_Regular: require("./assets/Fonts/UnB_Pro_Regular.otf"),
   });
 
   if (!fontsLoaded) {
