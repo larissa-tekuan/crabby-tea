@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     width: "90%",
     paddingHorizontal: 10,
     alignItems: "center",
+    backgroundColor: "rgb(0,104,180)",
   },
   buttonType: {
     fontSize: 16,

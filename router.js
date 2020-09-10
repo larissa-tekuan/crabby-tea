@@ -3,8 +3,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from "./pages/Home";
-import Campus from "./pages/Campus";
 import Cursos from "./pages/Cursos";
+import About from "./pages/About";
 const Stack = createStackNavigator();
 
 function Routes() {
@@ -16,8 +16,8 @@ function Routes() {
           component={Home}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="CAMPUS" component={Campus} />
         <Stack.Screen name="CURSOS" component={Cursos} />
+        <Stack.Screen name="SOBRE" component={About} />
       </Stack.Navigator>
     </NavigationContainer>
   );

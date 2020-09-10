@@ -24,12 +24,12 @@ export default function Home() {
           style={{ flexDirection: "column", justifyContent: "space-around" }}
         >
           <Tab
-            onClick={() => navigation.navigate("CAMPUS")}
+            onClick={() => navigation.navigate("CURSOS")}
             value="Darcy Ribeiro"
           />
-          <Tab onClick={() => navigation.navigate("CAMPUS")} value="FCE" />
-          <Tab onClick={() => navigation.navigate("CAMPUS")} value="FGA" />
-          <Tab onClick={() => navigation.navigate("CAMPUS")} value="FUP" />
+          <Tab onClick={() => navigation.navigate("CURSOS")} value="FCE" />
+          <Tab onClick={() => navigation.navigate("CURSOS")} value="FGA" />
+          <Tab onClick={() => navigation.navigate("CURSOS")} value="FUP" />
         </View>
       </ScrollView>
     </View>
